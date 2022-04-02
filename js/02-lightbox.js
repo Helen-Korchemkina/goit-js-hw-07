@@ -33,8 +33,6 @@ function onOpenModal(event) {
 }
 
 let gallery = new SimpleLightbox(".gallery a", {
-  captions: true,
-  captionPosition: "bottom",
   captionsData: "alt",
   captionDelay: 250,
 });
