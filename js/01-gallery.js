@@ -40,3 +40,13 @@ function onOpenModal(event) {
 const instance = basicLightbox.create(`
     <img src="" class="modal">
 `);
+
+galleryItemsEls.addEventListener("keydown", onCloseKeyModal);
+
+function onCloseKeyModal(event) {
+    if (event.code === 'Escape') {
+    instance.close();
+  }
+}
+
+
